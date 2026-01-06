@@ -8,8 +8,8 @@
 
 /* Body styling */
 body {
-    background-color: #F5F5F5; /* light gray for AAA contrast */
-    color: #0A0A0A; /* very dark text */
+    background-color: #F5F5F5; /* very light background for contrast */
+    color: #0A0A0A; /* dark text */
     line-height: 1.8;
 }
 
@@ -32,14 +32,14 @@ nav a {
 }
 
 nav a:hover {
-    color: #A0D8B0; /* lighter green hover */
+    color: #A0D8B0; /* lighter green on hover */
 }
 
 /* Header section */
 header {
     text-align: center;
     padding: 5rem 2rem;
-    background: linear-gradient(135deg, #0B3D2E, #1B5E48);
+    background: linear-gradient(135deg, #0B3D2E, #145D42); /* forest green gradient */
     color: #F5F5F5;
 }
 
@@ -125,7 +125,7 @@ footer {
     margin-top: 4rem;
 }
 
-/* Responsive layout */ 
+/* Responsive layout */
 @media (min-width: 768px) {
     .about-me {
         flex-direction: row;
