@@ -12,6 +12,44 @@ body {
     color: #0A0A0A;
     line-height: 1.8;
 }
+/* Project Card Hover & Styling */
+.project-card {
+    background-color: #E6F2E9;
+    border: 2px solid #0B3D2E;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.project-card video {
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+/* Responsive for larger screens */
+@media (min-width: 768px) {
+    .project-card {
+        flex-direction: row;
+        align-items: center;
+    }
+    .project-card .description {
+        padding-left: 2rem;
+    }
+    .project-card video {
+        width: 50%;
+    }
+}
 
 /* Navigation */
 nav {
